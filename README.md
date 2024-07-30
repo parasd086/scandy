@@ -1,15 +1,13 @@
 # Scandy
 
 Scandy is a network vulnerability scanner built with Python.
-This works best on Linux (Kali) but to use it on Windows check the branch [old_version](https://github.com/andyboat75/scandy/tree/old_version "old_version")
-I have a tutorial of how I developed this scanner on [YouTube](https://youtube.com/playlist?list=PLE9wWR6sJKjEyCgneyZPK_2qk9rggPv1J)
-  
-## Features  
-  
+
+## Features
+
 - Scan network for connected(active) devices.
 - Retrieve information such as Mac address, OS, Hostname,
 - Scan for open ports, port services, port banners and additional vulnerabilities.
-- Search for existing CVE for open ports using [Vulners API](https://vulners.com)  
+- Search for existing CVE for open ports using [Vulners API](https://vulners.com)
 
 ## Installation
 
@@ -37,12 +35,12 @@ Because Scapy interacts directly with the raw socket of your system it requires 
 
 ## Usage
 
-|   Commands        |     Description                |
-|:-----------------:|:------------------------------:|
-| -t or --target    |    Target network ip           |
-|  -p or --port     |    port(s) to scan             |
-| -th or --thread   | Number of thread. Default 50   |
-| -v or --verbose   |  Print all closed ports        |
+|    Commands     |         Description          |
+| :-------------: | :--------------------------: |
+| -t or --target  |      Target network ip       |
+|  -p or --port   |       port(s) to scan        |
+| -th or --thread | Number of thread. Default 50 |
+| -v or --verbose |    Print all closed ports    |
 
 The command below will check if the IP can be reached and then scan default ports 1-1024
 
